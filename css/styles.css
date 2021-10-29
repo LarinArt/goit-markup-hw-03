@@ -62,6 +62,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Section */
@@ -225,6 +226,8 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+
+  text-align: center;
 
   letter-spacing: 0.06em;
   color: var(--white-color);
