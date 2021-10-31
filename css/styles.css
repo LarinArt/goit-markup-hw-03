@@ -65,8 +65,22 @@ ul {
   text-align: center;
 }
 
+.container .footer {
+  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+}
+
+.container.section {
+  padding: 0;
+  background-color: var(--footer-background-color);
+  margin-bottom: 94px;
+}
+
 /* Section */
-.section {
+.section,
+.pf-section {
   padding-bottom: 94px;
 }
 
@@ -160,23 +174,9 @@ ul {
   color: var(--secondary-text-color);
 }
 
-.contacts .link {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
-
-.contacts .link:hover,
-.contacts .link:focus {
-  color: var(--blue-color);
-}
-
 .main-title {
   padding-top: 200px;
-  padding-bottom: 200px;
+  margin-bottom: 30px;
 
   font-weight: 900;
   font-size: 44px;
@@ -185,10 +185,10 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  background-color: var(--footer-background-color);
 }
 
 .section-header {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -222,6 +222,7 @@ ul {
 
 /* Button */
 .main-button {
+  margin-bottom: 200px;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -233,7 +234,6 @@ ul {
   color: var(--white-color);
   background-color: var(--blue-color);
   height: 50px;
-  margin-bottom: 200px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -337,6 +337,7 @@ ul {
 }
 .address-text .address-link {
   text-decoration: none;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -345,6 +346,7 @@ ul {
 
 .footer-contact .link {
   text-decoration: none;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -352,12 +354,18 @@ ul {
 }
 
 .footer-logo {
+  font-family: Raleway;
+  margin-bottom: 20px;
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+.footer .list {
+  margin-top: 20px;
 }
 
 /* Скрыть */
