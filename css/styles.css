@@ -65,23 +65,16 @@ ul {
   text-align: center;
 }
 
-.container .footer {
-  text-align: left;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 15px;
-}
-
-.container.section {
-  padding: 0;
+.container.main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--footer-background-color);
-  margin-bottom: 94px;
 }
 
 /* Section */
 .section,
 .pf-section {
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 /* Logo */
@@ -103,6 +96,8 @@ ul {
 .site-nav {
   display: flex;
   margin-left: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link {
@@ -138,8 +133,6 @@ ul {
   text-decoration: none;
   display: block;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -153,7 +146,7 @@ ul {
   color: var(--blue-color);
 }
 
-.contacts .item + .item {
+.contacts .item:last-child {
   margin-left: 50px;
 }
 
@@ -237,6 +230,7 @@ ul {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   padding: 10px 32px;
 }
 
@@ -262,6 +256,8 @@ ul {
   font-family: inherit;
   background-color: var(--hover-secondary-button);
   cursor: pointer;
+
+  border: none;
 }
 
 .filter .secondary-button:hover {
@@ -335,6 +331,14 @@ ul {
   font-style: normal;
   background-color: var(--footer-background-color);
 }
+
+.footer .container {
+  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+}
+
 .address-text .address-link {
   text-decoration: none;
   font-style: normal;
@@ -370,5 +374,6 @@ ul {
 
 /* Скрыть */
 .none {
-  display: none;
+  font-size: 0;
+  height: 0;
 }
